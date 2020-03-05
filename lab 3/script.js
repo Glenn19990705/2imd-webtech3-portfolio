@@ -42,6 +42,13 @@ class App {
     // HINT🤩
     // clicking the button should work
     // pressing the enter key should also work
+    let inputText = document.querySelector('#txtAddNote');
+    inputText.addEventListener("keyup", function(event){
+      if(event.keyCode === 13){
+      this.btnAdd = document.querySelector("#btnAddNote");
+      this.btnAdd.addEventListener("click", this.createNote.bind(this));
+      }
+    });
     this.btnAdd = document.querySelector("#btnAddNote");
     this.btnAdd.addEventListener("click", this.createNote.bind(this));
     // this.loadNotesFromStorage();
