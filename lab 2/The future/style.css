@@ -1,0 +1,24 @@
+body{
+font-size: larger;}
+.grid{
+display: grid;
+grid-template-columns: 2fr;
+padding: 20px 10px;
+gap: 10px;
+}
+
+.redBox{
+    text-align: center;
+    background-color: red;
+    gap: 10px;
+ 
+}
+
+.blueBox{
+    text-align: center;
+    background-color: skyblue;
+}
+.yellowBox{
+    text-align: center;
+    background-color: yellow;
+}
