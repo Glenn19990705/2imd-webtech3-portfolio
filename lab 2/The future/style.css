@@ -10,8 +10,6 @@ gap: 10px;
 .redBox{
     text-align: center;
     background-color: red;
-    gap: 10px;
- 
 }
 
 .blueBox{
@@ -21,4 +19,9 @@ gap: 10px;
 .yellowBox{
     text-align: center;
     background-color: yellow;
+}
+@media(min-width:600px){
+    .grid{
+        grid-template-columns: repeat(2, 2fr);
+    }
 }
